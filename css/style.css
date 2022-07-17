@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body{
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0; 
+    background: #F6656E;
+    color: white;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.container-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f7a6ac;
+    width: 50%;
+    padding: 10px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+}
+.container-1 .header h1{
+    font-size: 4rem;
+}
+.content input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    font-size: 1rem;
+}
+.content input:focus{
+    outline: none;
+}
+    
+button{
+    padding: 10px;
+    font-family: 'Space Mono', monospace;
+    border-radius: 5px;
+    background: none;
+    font-weight: 900;
+}
+button:hover{
+    background: white;
+    color: black;
+    border: none;
+
+}
+.container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+.timer{
+    display: flex;
+    gap: 20px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.work h1{
+    text-transform: capitalize;
+}
+.timer p{
+    letter-spacing: 10px;
+    font-weight: 900;
+    font-size: 4.5rem;
+}
+
+@media screen and (max-width: 578px){
+    body{
+        background: #14CA55;
+    }
+    .container {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .container-1, .container-2{
+        background: none;
+        width: auto;
+        gap: 20px;
+    }
+    input{
+        width: auto;
+    }
+    .container-1 .header h1{
+        font-size: 2rem;
+    }
+    .container-2 {
+        margin-top: 20px;
+        border-top: 1px solid white;
+    }
+    .timer {
+        border-radius: 100%;
+        border: 10px solid #DEEDCF;
+        padding: 15px;
+    }
+    .timer p{
+        letter-spacing: 0;
+    }
+    button{
+        border: 2px solid white;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+    .content div{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
